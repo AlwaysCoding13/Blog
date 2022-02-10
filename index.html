@@ -2,21 +2,102 @@
 <html>
     <head>
         <title>Welcome to my blog</title>
-        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+        </style>
     </head>
     <body>
         <nav>
             <a href="index.html">Home</a>
-            <a href="TechBlog.html">Tech Blog</a>
-            <a href="">Python Journey</a>
+            <a href="https://alwayscoding13.github.io/Portfolio/">Portfolio</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="https://www.linkedin.com/in/ian-atkisson-392303231/">Linked In</a>
         </nav>
-        <div id="Content">
-            <Article>
-                <H1><a href="TechBlog.html">Tech Blog</a></H1>            
-                <p>Check out my tech blog to see all things I find interesting in tech</p>                
-                <h3>Smart Devices</h3>
-                <p>The future is <b><em>now</em></b> and now almost every everyday object is becoming smart enabled. With a growing market of smart enabled devices there are now more ways than ever to automate your life and make your day to day tasks easier. It's becoming so common that 1 in 4 U.S. adults own a smart speaker, and to take it a step further than that every smart phone nowadays has a smart assistant built in. These things are really just the tip of the iceburg when talking about smart devices, at this day and age you can find almost every household appliance with a smart enabled version.</p>
-            </Article>
+        <div id="heading">
+            <h1>Ian Atkisson Blog</h1>
+        </div>
+        <div class="Content">                       
+            <div id="column-one">
+                <Article class="card-with-img">
+                    <a href="SmartDevices.html">
+                        <h1>Smart Devices</h1>
+                        <p>The future is <b><em>now</em></b> and now almost every everyday object is becoming smart enabled. With a growing market of smart enabled devices there are now more ways than ever to automate your life and make your day to day tasks easier. It's becoming so common that 1 in 4 U.S. adults own a smart speaker, and to take it a step further than that every smart phone nowadays has a smart assistant built in. These things are really just the tip of the iceburg when talking about smart devices, at this day and age you can find almost every household appliance with a smart enabled version.</p>
+                        <div class="card-img">
+                            <img src="https://cdn.pixabay.com/photo/2021/03/13/04/11/touch-screen-6091015_960_720.jpg" alt="Smart Home" >
+                        </div>               
+                    </a>
+                </Article>
+                <Article class="card-with-img">
+                    <a href="MechanicalKeyboards.html">                      
+                        <h1>3D Modeling</h1>
+                        <p>I consider myself to be a creator of some sort and love art of all kinds. For example I collect Vinyl Figures created by many artists that come from different mediums like graffiti, traditional paiting, and sculpting. These artists are able to transform their 2D creations into 3D figues that you can move and animate. While I have a passion for art it's not my strong suit but with 3D software it feels more approchable because i'm more familir with tech mediums over a paint brush. I've finished one render so far using Blender with the help of a "Blender Guru" tutorial and look forward to trying to do some more!</p>
+                        <div class="card-img">
+                            <img src="images\Render_V1.5.png" alt="Render of a donut">
+                        </div>  
+                    </a>
+                </Article>                 
+            </div>
+            <div id="column-two">
+                <Article class="card">
+                    <a href="Inheritance.html">                  
+                        <h1>Inheritance</h1>
+                        <p>Inheritance is known as one of the main pillars of object oriented programming. With Inheritance it makes it easier to reuse code by inheriting fields and methods from a base class. This also has the added benifit of having <em>"cleaner"</em> code.
+                        Inheritance is an "IS-A" relationship, meaning that for example you would have say a base class of "Person" and a derived class "Student". The base class "Person" might have fields such as first and last name, and since a student "IS-A" person it would make sense for them to also have those fields so rather then recoding the same fields you can inherit those fields and add on any additional fields that are only nessassary to the derived class "Student" like a student-ID or email.
+                        When using Inheritance it's important to think out what fields and methods are useful to all of the derived classes to reduce the amount of repeated code.</p>
+                    </a>   
+                </Article>
+                <Article class="card">
+                    <a href="Python.html">                 
+                        <h1>Python</h1>
+                        <p>Python is one of the leading programming languages in the world right now for many reasons. It's able to be used for machine learning, mobile development, and even web development. This is really just scratching the surface of what it can be used for. These make it a very appealing language to learn because of the simple syntax and many applications, as well as the fact that many companies are making to switch to using python over other leading langauges. I'm planning on trying to learn it before the end of this summer.</p>
+                    </a>
+                </Article>
+                <Article class="card-with-img">
+                    <a href="AboutMe.html">                 
+                        <h1>About Me</h1>
+                        <p>Hi my name is Ian Atkisson, I'm a first year computer science student at Renton Technical College. Since I was a child, I've loved hobbies of all kinds. Learning new abilities and seeing my progress always brought me joy. Tech has always been one of my favorite hobbies to spend time with. Whether it be building a new pc, trying to automate my home with smart devices, playing games on Xbox and PC, or just watching and reading about new upcoming tech. Other than tech i'm really into "skill toys" such as Kendama, Yo-Yo, Fingerboarding, and Balisong. I love that you can see the progression and that there's always room for improvement.</p>
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>
+                                Keyboards
+                            </li>
+                            <li>
+                                Gaming
+                            </li>
+                            <li>
+                                Kendama
+                            </li>
+                            <li>
+                                Cats
+                            </li>
+                        </ul>
+                        <div class="card-img">
+                            <img src="images\PXL_20210207_070715186.PORTRAIT.jpg" alt="Photo of my cat Alice">
+                        </div> 
+                    </a>
+                </Article>   
+            </div>                            
+            <div id="column-three">
+                <Article class="card-with-img">  
+                    <a href="MechanicalKeyboards.html">                  
+                            <h1>Mechanical Keyboards</h1>
+                            <p>As programmers, we spend alot of time with our keyboards so I find it important that the experience is enjoyable and benifits your productivity. Mechanical Keyboards are the go to for people with typing based jobs because each key has more of a tactile feeling giving you better accuracy over a standard membrane keyboard. With Mechanical Keyboards you get the benifit of being able to customize your experience with different keycaps and switches affecting the amount of pressure nessassary per keypress and giving your board the sound you may be looking for.</p>
+                            <div class="card-img">
+                                <img src="https://cdn.pixabay.com/photo/2020/07/03/04/48/mechanical-keyboard-5365168_960_720.jpg" alt="Mechanical Keyboard with keycaps pulled off">
+                            </div> 
+                    </a>
+                </Article>                           
+                <Article class="card-with-img">
+                    <a href="">                      
+                        <h1>Never Enough Time</h1>
+                        <p>In this field it's an infinite pool of information and it's hard to find what to focus your time into. With as many frameworks and languages and "Stacks" you can learn it can be overwhelming to focus in one just one thing. I spend alot of my time "learning" but I find that it's difficult to properly allocate time into different tasks while maintaining constant progression. I often ask myself if i'm taking on too much at once and not mastering one thing. As the saying goes "Jack of all trades, Master of none". I hope to find the right work/study/life balance soon enough, but its always a race against the clock.</p>
+                        <div class="card-img">
+                            <img src="https://images.unsplash.com/photo-1506452819137-0422416856b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNsb2NrJTIwb3V0JTIwb2YlMjB0aW1lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Programmer working over clock flooring">
+                        </div> 
+                    </a>
+                </Article> 
+            </div>
         </div>
     </body>
 </html>
